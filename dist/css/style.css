@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-rows: 2fr 0.5fr 3fr;
+	height: 100vh;
+	width: 100vw;
+}
+
+/****** top section *******/
+
+.top {
+	background-image: url(https://images.unsplash.com/photo-1526749837599-b4eba9fd855e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	font-weight: 600;
+}
+
+/***** add tasks section ******/
+
+.add {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #E8E8EE;
+	border-bottom: 1px solid #bdbbbb;
+}
+
+.select {
+	cursor: pointer;
+	border: 1px solid #e7e7e7;
+	background-color: #fff;
+	margin: 0 0.7rem;
+	padding: 0.3rem;
+	transition: border 0.3s;
+	border-radius: 0.3rem;
+}
+
+.select:focus {
+	outline: none;
+	border: 0.1rem solid #28B9B5;
+}
+
+.description {
+	cursor: text;
+}
+
+.add__btn { 
+	color: #28B9B5;
+	font-size: 1.1rem;
+	border: none;
+	background: none;
+}
+
+.add__btn:active{
+	transform: translateY(1.5px);
+}
+
+.add__btn:focus {
+	outline: none;
+}
+
+/***** task lists ******/
+
+.task__container {
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto;
+} 
+
+.column {
+	padding: 0.3rem 0;
+}
+
+.spanish.column {
+	background-color: beige;
+}
+
+.programming.column {
+	background-color: honeydew;
+}
+
+.teaching.column {
+	background-color: snow;
+}
+
+.title {
+	padding: 0.1rem 0;
+}
+
+.totals > * {
+	padding: 0.1rem 0;
+}
+
+.list {
+	padding: 0.1rem 0;
+}
+
+.task__list {
+	display: flex;
+	justify-content: space-around;
+	border: 0.04rem solid grey;
+	padding: 0.3rem;
+	margin: 0.15rem 0.25rem;
+	background-color: darkseagreen;
+	border-radius: 0.1rem;
+}
+
+.task__list:nth-child(even) {
+	background-color: aquamarine;
+}
+
+.right {
+	display: contents;
+}
+

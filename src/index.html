@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<title>Task Tracker</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top">
+			<div class="date">
+				Tasks completed in week of <span class="week__date">%Week%</span>
+			</div>	
+			<div class="overall__percentage___title">
+				Overall percentage complete: <span class="overall__percentage">---</span>			
+			</div>		
+		</div>
+
+		
+
+		<div class="add">
+			<div class="add__container">
+				<select class="select day">
+					<option value="Mon">Mon</option>
+					<option value="Tues">Tues</option>
+					<option value="Wed">Wed</option>
+					<option value="Thu">Thu</option>
+					<option value="Fri">Fri</option>
+				</select>
+				<select class="select type">
+					<option value="programming">Programming</option>
+					<option value="spanish">Spanish</option>
+					<option value="teaching">Teaching</option>
+				</select>
+				<input type="text" class="select description" placeholder="Add description">
+				<input type="number" class="select time" placeholder="Minutes">
+				<button class="add__btn"><i class="far fa-check-circle"></i></button>
+			</div>
+		</div>
+
+		
+		<div class="task__container">
+			<div class="programming column">
+				<h2 class="programming title">Programming</h2>
+				<div class="programming totals">
+					<div>Goal: <input class="programmingGoalInput" type="number" placeholder="Hours"></div>
+					<div>Total Completed: <span class="programming__total">---</span></div>					
+				</div>
+				<div class="programming list">
+					
+			<!-- 		<div class="task__list" id="programming-%id%">
+							<div class="task__description">%description%</div>
+							<div class="right">
+								<div class="task__time">%time%</div>
+								<div class="task__day">&day&</div>
+								<div class="task__percentage">%percentage%</div>
+								<div class="task__delete">
+									<button class="item__delete--btn"><i class="far fa-times-circle"></i></button>
+								</div>
+							</div>
+					</div> -->
+
+
+				</div>
+			</div>
+			<div class="spanish column">
+				<h2 class="spanish title">Spanish</h2>
+				<div class="spanish totals">
+					<div>Goal: <input class="spanishGoalInput" type="number" placeholder="Hours"></div>
+					<div>Total Completed: <span class="spanish__total">---</span></div>					
+				</div>
+				<div class="spanish list">
+					
+					<!-- <div class="task__list" id="spanish-%id%">
+							<div class="task__description">%description%</div>
+							<div class="right">
+								<div class="task__time">%time%</div>
+								<div class="task__day">&day&</div>
+								<div class="task__percentage">%percentage%</div>
+								<div class="task__delete">
+									<button class="item__delete--btn"><i class="far fa-times-circle"></i></i></button>
+								</div>
+							</div>
+						</div> -->
+					
+				</div>
+			</div>
+			<div class="teaching column">
+				<h2 class="teaching title">Teaching</h2>
+				<div class="teaching totals">
+					<div>Goal: <input class="teachingGoalInput" type="number" placeholder="Hours"></div>
+					<div>Total Completed: <span class="teaching__total">---</span></div>					
+				</div>
+				<div class="teaching list">
+					
+					<!-- <div class="task__list" id="teaching-%id%">
+							<div class="task__description">%description%</div>
+							<div class="right">
+								<div class="task__time">%time%</div>
+								<div class="task__day">&day&</div>
+								<div class="task__percentage">%percentage%</div>
+								<div class="task__delete">
+									<button class="item__delete--btn"><i class="far fa-times-circle"></i></i></button>
+								</div>
+							</div>
+						</div> -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
