@@ -83,13 +83,13 @@ const obj_arr = [
 ];
 
 const getTaskPercentages = () => {
-    function test(x){
+    function calcPerc(x){
         x.forEach(cur => {
             cur.calculatePercentage();
         });
     }
     for (var i = 0; i < obj_arr.length; i++){
-            test(obj_arr[i]);
+            calcPerc(obj_arr[i]);
     }
 };
 

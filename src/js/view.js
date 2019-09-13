@@ -63,8 +63,6 @@ export const addTaskList = (obj, type) => {
     }
 
 export const deleteTaskList = ID => {
-    // we need to use the removeChild so from the element we need to go up in the DOM
-    // ----------- long way of doing it -------------- document.getElementById(ID).parentNode.removeChild(document.getElementById(ID))
     const el = document.getElementById(ID);
     el.parentNode.removeChild(el);
 }

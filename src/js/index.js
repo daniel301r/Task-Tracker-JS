@@ -3,7 +3,6 @@ import * as model from './model';
 import { DOMstrings} from './view';
 import { data } from './model';
 
-
 const setupEventListeners = () => {
 
 	document.querySelector(DOMstrings.inputBtn).addEventListener('click', ctrlAddItem);
@@ -34,9 +33,9 @@ const ctrlAddItem = () => {
 	// 1. get the input data
 	let input = view.getInput();
 
-	data.goals.programming = parseFloat(input.programmingGoal * 60);
-	data.goals.spanish = parseFloat(input.spanishGoal * 60);
-	data.goals.teaching = parseFloat(input.teachingGoal * 60);
+	data.goals.programming = parseInt(input.programmingGoal * 60);
+	data.goals.spanish = parseInt(input.spanishGoal * 60);
+	data.goals.teaching = parseInt(input.teachingGoal * 60);
 	
 	if (data.goals[input.type] === 0) {
 		alert(`Please set weekly goal for ${input.type}`);
@@ -44,7 +43,7 @@ const ctrlAddItem = () => {
 		let newTask;
 
 		if (input.description != "" && !isNaN(input.time) && input.time > 0) {
-			// 2. add item to task controller (data structure - classes)			
+			// 2. add item to task controller			
 			newTask = model.addTask(input.type, input.day, input.description, input.time);
 
 			// 3. calculate and update new percentages
